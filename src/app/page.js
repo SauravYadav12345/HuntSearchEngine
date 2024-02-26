@@ -1,9 +1,8 @@
-import React from 'react'
-import  {HomeHeader}  from './components/HomeHeader'
-import Image from 'next/image'
-import { HomeSearch } from './components/HomeSearch'
+import  {HomeHeader}  from './components/HomeHeader';
+import Image from 'next/image';
+import { HomeSearch } from './components/HomeSearch';
 
-const page = () => {
+const Home = () => {
   return (
     <>
     <HomeHeader/>
@@ -14,12 +13,12 @@ const page = () => {
       width={300}
       height={100}
       priority
-      style={{width:"auto"}}
+      style={{ width:"auto" }}
       /> 
       <HomeSearch/>
     </div>
     </>
-  )
+  );
 }
 
-export default page
+export default Home;

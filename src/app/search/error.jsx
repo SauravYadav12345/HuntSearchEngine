@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import { useEffect } from "react";
 
 const Error = ({error, reset}) => {
     useEffect(()=>{
@@ -10,7 +10,7 @@ const Error = ({error, reset}) => {
         <h1 className='text-3xl mb-4' >Something went wrong!</h1>
         <button className='text-blue-500' >Try again</button>
     </div>
-  )
+  );
 }
 
 export default Error;

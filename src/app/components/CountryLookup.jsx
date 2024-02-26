@@ -1,8 +1,8 @@
 "use client ";
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 export const CountryLookup = () => {
-    const [country, setCountry] = useState('India');
+    const [country, setCountry] = useState('Delhi');
 
     useEffect(()=>{
         const getCountry = async ()=>{
@@ -17,5 +17,5 @@ export const CountryLookup = () => {
     
   return (
     <div>{country}</div>
-  )
+  );
 }
